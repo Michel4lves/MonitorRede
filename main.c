@@ -37,6 +37,8 @@ int main() {
         printf("       MONITOR DE REDE - PI II-A\n");
         printf("========================================\n");
         printf("\n");
+        printf("De: Lucas Cousen, Michel Alves & Rogério Cantarelli\n");
+        printf("\n");
 
         printf("\033[93m");
 
@@ -58,6 +60,10 @@ int main() {
 
         printf("\nEscolha uma opcao: ");
         scanf("%d", &opcao);
+
+
+
+        // MENU
 
         switch (opcao) {
 
