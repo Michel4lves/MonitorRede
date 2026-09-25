@@ -26,7 +26,7 @@ void monitoramentoCompleto() {
     printf("        INFORMACOES DA REDE\n");
     printf("----------------------------------------\n\n");
 
-    system("ipconfig");
+    system("ipconfig /all");
 
 
     // 2 - Solicitar destino

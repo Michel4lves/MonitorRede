@@ -9,6 +9,7 @@
 #include "includes/perda.h"
 #include "includes/ip.h"
 #include "includes/monitoramento.h"
+#include "includes/rota.h"
 
 #include "includes/util.h"
 
@@ -47,10 +48,11 @@ int main() {
         printf("  3 - Medir latencia\n");
         printf("  4 - Calcular perda de pacotes\n");
         printf("  5 - Identificar tipo de IP\n");
+        printf("  6 - Rastrear rota\n");
 
         printf("\033[34m");
 
-        printf("  6 - Monitoramento completo\n");
+        printf("  7 - Monitoramento completo\n");
 
         printf("\033[31m");
 
@@ -86,8 +88,12 @@ int main() {
             case 5:
                 identificarTipoIP();
                 break;
-
+            
             case 6:
+                rastrearRota();
+                break;
+
+            case 7:
                 monitoramentoCompleto();
                 break;
 
