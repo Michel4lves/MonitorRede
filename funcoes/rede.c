@@ -7,10 +7,14 @@ void mostrarInformacoesRede() {
 
     limparTela();
 
+    printf("\033[33m");
+
     printf("\n");
     printf("----------------------------------------\n");
     printf("        INFORMACOES DE REDE\n");
     printf("----------------------------------------\n\n");
+
+    printf("\033[0m");
 
 #ifdef _WIN32
 

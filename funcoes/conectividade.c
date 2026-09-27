@@ -10,11 +10,15 @@ void testarConectividade() {
     char destino[100];
     char comando[150];
 
+    printf("\033[33m");
+
     printf("\n");
     printf("----------------------------------------\n");
     printf("        ANALISE DE CONECTIVIDADE\n");
     printf("            LATENCIA E PERDA\n");
     printf("----------------------------------------\n\n");
+
+    printf("\033[0m");
 
     obterDestino(destino);
 
@@ -24,7 +28,11 @@ void testarConectividade() {
         sprintf(comando, "ping -c 10 %s", destino);
     #endif
 
+    printf("\033[31m");
+
     printf("\nTestando conexao com %s...\n\n", destino);
+
+    printf("\033[0m");
 
     system(comando);
 

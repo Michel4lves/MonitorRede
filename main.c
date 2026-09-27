@@ -97,37 +97,3 @@ int main() {
 
     return 0;
 }
-
-
-// FUNCAO: Calcular taxa de perda
-
-void calcularTaxaPerda() {
-
-    int enviados;
-    int perdidos;
-    float taxa;
-
-    printf("\n");
-    printf("----------------------------------------\n");
-    printf("        CALCULO DE PERDA DE PACOTES\n");
-    printf("----------------------------------------\n\n");
-
-    printf("Quantidade de pacotes enviados: ");
-    scanf("%d", &enviados);
-
-    printf("Quantidade de pacotes perdidos: ");
-    scanf("%d", &perdidos);
-
-    if (enviados > 0 && perdidos >= 0 && perdidos <= enviados) {
-
-        taxa = ((float) perdidos / enviados) * 100;
-
-        printf("\nPacotes enviados: %d\n", enviados);
-        printf("Pacotes perdidos: %d\n", perdidos);
-        printf("Taxa de perda: %.2f%%\n", taxa);
-
-    } else {
-
-        printf("\nValores invalidos.\n");
-    }
-}
