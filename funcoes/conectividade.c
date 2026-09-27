@@ -18,7 +18,11 @@ void testarConectividade() {
 
     obterDestino(destino);
 
-    sprintf(comando, "ping -n 10 %s", destino);
+    #ifdef _WIN32
+        sprintf(comando, "ping -n 10 %s", destino);
+    #else
+        sprintf(comando, "ping -c 10 %s", destino);
+    #endif
 
     printf("\nTestando conexao com %s...\n\n", destino);
 

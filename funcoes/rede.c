@@ -12,7 +12,15 @@ void mostrarInformacoesRede() {
     printf("        INFORMACOES DE REDE\n");
     printf("----------------------------------------\n\n");
 
+#ifdef _WIN32
+
     system("ipconfig");
+
+#else
+
+    system("ip addr");
+
+#endif
 
     aguardarRetorno();
 }

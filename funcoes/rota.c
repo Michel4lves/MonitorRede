@@ -17,7 +17,15 @@ void rastrearRota() {
 
     obterDestino(destino);
 
+#ifdef _WIN32
+
     sprintf(comando, "tracert %s", destino);
+
+#else
+
+    sprintf(comando, "traceroute %s", destino);
+
+#endif
 
     printf("\nRastreando rota para %s...\n\n", destino);
 
