@@ -54,18 +54,7 @@ void monitoramentoCompleto() {
     printf("\n");
     printf("----------------------------------------\n");
     printf("        TESTE DE CONECTIVIDADE\n");
-    printf("----------------------------------------\n\n");
-
-    sprintf(comando, "ping -n 4 %s", destino);
-
-    system(comando);
-
-
-    // 5 - Verificar perda de pacotes
-
-    printf("\n");
-    printf("----------------------------------------\n");
-    printf("        PERDA DE PACOTES\n");
+    printf("            LATENCIA E PERDA\n");
     printf("----------------------------------------\n\n");
 
     sprintf(comando, "ping -n 10 %s", destino);
